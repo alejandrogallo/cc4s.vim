@@ -3,8 +3,22 @@ if exists("b:current_syntax")
 endif
 let b:current_syntax = "cc4s"
 
+
+
+syntax keyword cc4sAlgorithm
+  \ CoulombVertexReader TensorReader TensorWriter
+
+highlight link cc4sAlgorithm Keyword
+
 syntax keyword cc4sKeyword
- \ CoulombVertexReader file data
+  \ file Data unrestricted
+  \ HHHHCoulombIntegrals HHHPCoulombIntegrals HHPHCoulombIntegrals
+  \ HHPPCoulombIntegrals HPHHCoulombIntegrals HPHPCoulombIntegrals
+  \ HPPHCoulombIntegrals HPPPCoulombIntegrals PHHHCoulombIntegrals
+  \ PHHPCoulombIntegrals PHPHCoulombIntegrals PHPPCoulombIntegrals
+  \ PPHHCoulombIntegrals PPHPCoulombIntegrals PPPHCoulombIntegrals
+  \ PPPPCoulombIntegrals 
+
 
 " Define the highlighting of cc4sKeyword as general Keyword
 highlight link cc4sKeyword Keyword
