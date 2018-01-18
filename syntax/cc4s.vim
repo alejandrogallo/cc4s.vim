@@ -28,3 +28,9 @@ highlight link cc4sOperator Operator
 """""""""""""""
 syntax match cc4sConstant "\v(([0-9]*\.)?[0-9]+E?-?[0-9]*\s?)*$"
 highlight link cc4sConstant Constant
+
+
+" Strings: {{{1
+syn region cc4sString start=+"+ end=+"+
+highlight link cc4sString String
+
