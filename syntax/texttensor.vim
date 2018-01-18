@@ -8,7 +8,7 @@ let b:current_syntax = "texttensor"
 syntax match tensorName "^\%1l.*$"
 syntax match tensorDimensions "^\%1l\d\+$"
 syntax match tensorOrder "^\%2l.*$$"
-syntax match tensorElements "\\d\+"
+syntax match tensorElements "\v\d\+"
 
 
 highlight link numberOfAtoms Special
